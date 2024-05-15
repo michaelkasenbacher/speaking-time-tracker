@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speaking Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Speaking Time Tracker</h1>
+    <div id="input-section">
+        <input type="text" id="name-input" placeholder="Enter name">
+        <button onclick="addName()">Add Name</button>
+    </div>
+    <div id="buttons-section">
+        <button onclick="startTimer('Silence')">Silence</button>
+    </div>
+    <div id="end-button-section">
+        <button onclick="endSession()">End</button>
+    </div>
+    <div id="current-speaker-section">
+        <p>Current Speaker: <span id="current-speaker">None</span></p>
+        <p>Current Speaking Time: <span id="current-time">0.00</span> minutes</p>
+    </div>
+    <div id="total-time-section">
+        <p>Total Speaking Time:</p>
+        <div id="individual-times"></div>
+    </div>
+    <div id="results-section"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
